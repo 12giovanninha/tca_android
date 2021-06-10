@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerRanking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".fragments.RankingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerFake"
+        android:layout_width="424dp"
+        android:layout_height="262dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/primeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="primeiro" />
+
+        <TextView
+            android:id="@+id/segundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginTop="45dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/primeiro"
+            tools:text="segundo" />
+
+        <TextView
+            android:id="@+id/terceiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="@+id/segundo"
+            app:layout_constraintStart_toStartOf="@+id/segundo"
+            app:layout_constraintTop_toBottomOf="@+id/segundo"
+            tools:text="terceiro" />
+
+        <TextView
+            android:id="@+id/score_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#3DDC97"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/primeiro"
+            app:layout_constraintStart_toStartOf="@+id/primeiro"
+            app:layout_constraintTop_toBottomOf="@+id/primeiro"
+            tools:text="score" />
+
+        <TextView
+            android:id="@+id/score_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#3DDC97"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/segundo"
+            app:layout_constraintStart_toStartOf="@+id/segundo"
+            app:layout_constraintTop_toBottomOf="@+id/segundo"
+            tools:text="score" />
+
+        <TextView
+            android:id="@+id/score_trh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#3DDC97"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/terceiro"
+            app:layout_constraintStart_toStartOf="@+id/terceiro"
+            app:layout_constraintTop_toBottomOf="@+id/terceiro"
+            tools:text="score" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:text="1°"
+            android:textColor="#FFCC00"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toBottomOf="@+id/primeiro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/primeiro"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="1°" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2°"
+            android:textColor="#AEAEAE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toTopOf="@+id/score_second"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/segundo"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="2°" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="3°"
+            android:textColor="#C35B01"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toTopOf="@+id/score_trh"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/terceiro"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="3°" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#00000000"
+            app:layout_constraintBottom_toBottomOf="@+id/score_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/primeiro"
+            android:src="@drawable/ic_iconfinder_403020_avatar_male_support_user_headset_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="59dp"
+            android:src="@drawable/ic_iconfinder_403023_avatar_user_woman_female_person_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/score_second"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/segundo"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="63dp"
+            android:layout_height="58dp"
+            android:src="@drawable/ic_iconfinder_403022_business_man_male_user_avatar_profile_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/score_trh"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/terceiro" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:isIndicator="true"
+            android:numStars="3"
+            android:stepSize="1"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listUsers"
+        android:layout_width="374dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerFake" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRanking"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="94dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

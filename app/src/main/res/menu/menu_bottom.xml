@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gameFragment"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Play" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Settings" />
+    <item
+        android:id="@+id/rankingFragment"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Ranking" />
+</menu>
